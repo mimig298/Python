@@ -2,10 +2,10 @@ digits = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", 
 
 def UpdateBase(number, base):
     changes = False
-    if base < 1 or base > 36:
+    if base < 1 or base > len(digits):
         changes = True
         print(f"The base you input ({base}) isn't supported")
-        base = int(input(f"Input new base (>0 and <37)"))
+        base = int(input(f"Input new base (>0 and <{len(digits)+1}): "))
     for digit in number:
         if digit not in digits[:base]:
             changes = True
