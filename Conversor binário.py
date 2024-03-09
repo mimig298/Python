@@ -1,5 +1,5 @@
 from random import randint
-from math import log2, floor, ceil
+from math import log2, floor
 
 decDigits = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 binDigits = ["0", "1"]
@@ -57,7 +57,7 @@ def debugCode(maxVal):
         bins.append(convertToBin(number))
         progress += 1
         if progress / len(decs) * 100 >= progressMarks:
-            print("(" + str(progressMarks*1) + "% done)")
+            print("(" + str(progressMarks) + "% done)")
             progressMarks += 1
     # Say the conversions it did (uncomment the lines to activate; it slows the program down A LOT)
     #for x in range(len(bins)):
@@ -85,7 +85,7 @@ def debugCode(maxVal):
     if errors == 0:
         print("\nNo errors were found!")
     else:
-        print("\nA total of", errors, "were found!")
+        print("\nA total of", errors, "errors were found!")
 
 while True:
     print("Insert a number followed by the letter 'b' or 'd' to specify if it is decimal or binary.\nExamples: 1000101b   420d")

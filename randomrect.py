@@ -1,7 +1,7 @@
 from tkinter import *
 import random
 tk = Tk()
-canvas = Canvas(tk, width=400, height=400)
+canvas = Canvas(tk, width=800, height=800)
 canvas.pack()
 def random_rectangle(width, height):
     x1 = random.randrange(width)

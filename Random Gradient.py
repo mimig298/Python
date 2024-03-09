@@ -1,6 +1,7 @@
 # program that generates a gradient
 
 from random import randint
+from time import sleep
 
 # generate the first line
 gradient = [[0]*30]
@@ -26,3 +27,4 @@ for x in range(len(gradient)):
         char = str(y)
         line = line + " "*(maxChar-len(char)) + char + " "
     print(line)
+    sleep(0.01)

@@ -31,7 +31,9 @@ while True:
         print()
     print()
     
-    a = input().upper()[0]
+    a = input().upper()
+    if len(a) > 0:
+        a = a[0]
     if a == "A":
         money += 1
     elif a == "S":
