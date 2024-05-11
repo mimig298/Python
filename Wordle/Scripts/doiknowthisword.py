@@ -32,16 +32,13 @@ while True:
         knownwords.append(chosen)
         print("Word kept (" + str(len(knownwords)-1) + "/" + str(len(words)) + " words)")
     elif answr == "n":
-        words.remove(chosen)
-        print("Word deleted (" + str(len(knownwords)-1) + "/" + str(len(words)) + " words)")
+        #words.remove(chosen)
+        #print("Word deleted (" + str(len(knownwords)-1) + "/" + str(len(words)) + " words)")
+        print("Word ignored :)")
     elif answr == "u" and prev != "":
-        if prev not in knownwords:
-            words.append(prev)
-        else:
-            knownwords.remove(prev)
+        knownwords.remove(prev)
         print("Previous action undid successfully")
     elif answr == "s" and input("Save data to files? (cannot be undone!)\n[Y/N]: ").upper() == "Y":
-        UpdateList("../Assets/words_all.txt", sorted(words))
         UpdateList("../Assets/words_usable.txt", sorted(knownwords[1:]))
         print("Word list updated successfully!")
     elif answr == "x":

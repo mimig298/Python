@@ -4,7 +4,7 @@ from random import randint
 from time import sleep
 
 # generate the first line
-gradient = [[0]*30]
+gradient = [[0]*20]
 
 for x in range(1000-1):
     newLine = []
