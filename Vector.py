@@ -72,7 +72,7 @@ class Vector2():
         newy = lenght * cos(origangle + angle)
         return Vector2(newx, newy)
     
-    def bool(self):
+    def __bool__(self):
         '''
         True if self else False
         '''

@@ -8,12 +8,16 @@ def shorten(r):
         nr = r/(10**l)
         return str(nr)+"e"+str(l)
 
-def fato(n):
-    r = 1
-    for i in range(n):
-        r *= i+1
+def fato(n, e=1):
+    r = n
+    while n - e > 1:
+        n -= e
+        r *= n
     return r
 
-calc = int(input("Number: "))
-print(shorten(fato(calc)))
-input()
+def som(n, i=1, e=1):
+    r = i
+    while i < n:
+        i += e
+        r += i
+    return r

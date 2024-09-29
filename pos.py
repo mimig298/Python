@@ -7,9 +7,9 @@ acc = 0
 
 while True:
     acc += randint(-4, 4)
-    if pos > 10:
+    if pos > acc:
         acc -= 1
-    elif pos < -10:
+    elif pos < -acc:
         acc += 1
     vel = round(vel+acc/100, 2)
     pos = round(pos+vel/10, 2)

@@ -70,6 +70,7 @@ fetch
 fiend
 fifty
 first
+foamy
 frail
 funky
 gases
@@ -112,6 +113,7 @@ longs
 looms
 lorry
 lucky
+lunar
 lutes
 mains
 mango
